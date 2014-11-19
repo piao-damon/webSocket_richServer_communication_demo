@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+        version="2.0">
+    <description>JSTL 1.1 functions library</description>
+	<display-name>JSTL functions </display-name>
+	<tlib-version>1.1</tlib-version>
+	<short-name>fnc</short-name>
+	<uri>http://java.sun.com/jsp/jstl/functionsc</uri>
+
+    <!-- Invoke 'Generate' action to add tags or functions -->
+    <function>
+		<description>目标请求前缀</description>
+		<name>getAppPrefix</name>
+		<function-class>com.xiaoma.kf.common.global.ConstantsUtil</function-class>
+		<function-signature>java.lang.String getApp_Destination_Prefix()</function-signature>
+		<example>${fnc:getAppPrefix()}</example>
+	</function>
+	
+	<function>
+		<description>STOMP 终端</description>
+		<name>getStompEndPoint</name>
+		<function-class>com.xiaoma.kf.common.global.ConstantsUtil</function-class>
+		<function-signature>java.lang.String getStomp_End_Point()</function-signature>
+		<example>${fnc:getStompEndPoint()}</example>
+	</function>
+    
+    <function>
+		<description>通信类型（单点）</description>
+		<name>getChatSingle</name>
+		<function-class>com.xiaoma.kf.common.global.ConstantsUtil</function-class>
+		<function-signature>java.lang.String getChat_Single()</function-signature>
+		<example>${fnc:getChatSingle()}</example>
+	</function>
+	
+	<function>
+		<description>通信类型（多点）</description>
+		<name>getChatMulti</name>
+		<function-class>com.xiaoma.kf.common.global.ConstantsUtil</function-class>
+		<function-signature>java.lang.String getChat_Multi()</function-signature>
+		<example>${fnc:getChatMulti()}</example>
+	</function>
+    
+    
+    
+</taglib>

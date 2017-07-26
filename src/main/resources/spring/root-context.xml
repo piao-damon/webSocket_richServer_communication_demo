@@ -13,15 +13,15 @@
 
 	<!-- Configurer that replaces ${...} placeholders with values from a properties file -->
     <!-- (in this case, JDBC-related settings for the dataSource definition below) -->
-    <context:property-placeholder location="classpath:spring/data-access.properties" system-properties-mode="OVERRIDE"/>
+    <!--<context:property-placeholder location="classpath:spring/data-access.properties" system-properties-mode="OVERRIDE"/>-->
     
     
     <!-- import the dataSource definition -->
-    <import resource="datasource-config.xml"/>
+    <!--<import resource="datasource-config.xml"/>-->
     
     
     <!-- import the transactionManager definition -->
-    <import resource="transactionManager-config.xml"/>
+    <!--<import resource="transactionManager-config.xml"/>-->
     
     
     <!-- enable autowire -->
@@ -44,8 +44,8 @@
 
 	
 	<!-- spring data jpa repositories -->
-    <jpa:repositories base-package="com.xiaoma.kf.**.sdj">
-    </jpa:repositories>
+    <!--<jpa:repositories base-package="com.xiaoma.kf.**.sdj">-->
+    <!--</jpa:repositories>-->
 	
 	
 	

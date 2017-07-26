@@ -39,8 +39,8 @@ public class kfWebSocketHandler extends kfAbstractSessionChannelInterceptor impl
     public static final Map<String, WebSocketSession> usersMap;
  
     static {
-        users = new ArrayList<>();
-        usersMap = new HashMap<>();
+        users = new ArrayList<WebSocketSession>();
+        usersMap = new HashMap<String, WebSocketSession>();
     }
  
     @Override
